@@ -14,6 +14,16 @@ export default function HomeScreen({navigation}: { navigation: any }) {
                 navigation.navigate('02Layout')
               }
       />
+      <Button title="03 - Flexbox"
+              onPress={() =>
+                navigation.navigate('03Flexbox')
+              }
+      />
+      <Button title="04 - List"
+              onPress={() =>
+                navigation.navigate('04List')
+              }
+      />
       <Button title="02 - Profile"
               onPress={() =>
                 navigation.navigate('Profile', {name: 'Jane'})

@@ -8,3 +8,8 @@
 
 ## 02 - Changes
 1. Navigation is added
+
+## 03 - Changes
+1. FlatList
+2. expo-constants
+3. TouchableHighlight: with custom underlay color

@@ -1,11 +1,23 @@
-import {Platform, SafeAreaView, StatusBar, StyleSheet} from 'react-native';
+import {Platform, SafeAreaView, StatusBar, StyleSheet, View} from 'react-native';
+import {useDeviceOrientation, useDimensions} from "@react-native-community/hooks";
 
 export default function LayoutScreen02() {
+
+  console.log(useDimensions());
+  console.log(useDeviceOrientation());
+
+  const {landscape} = useDeviceOrientation();
 
   return (
     // SafeAreaView is working only IOS
     <SafeAreaView style={styles.container}>
+      <View style={{
+        backgroundColor: 'dodgerblue',
+        width: "100%",
+        height: landscape ? '100%' : '30%'
+      }}>
 
+      </View>
     </SafeAreaView>
   );
 }
