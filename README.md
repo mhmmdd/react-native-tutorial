@@ -5,3 +5,6 @@
 4. TouchableWithoutFeedback, TouchableOpacity, TouchableHighlight
 5. Button: Customized alert
 6. Platform specific style: Platform.OS === "android" ? StatusBar.currentHeight : 0,
+
+## 02 - Changes
+1. Navigation is added
