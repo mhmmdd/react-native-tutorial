@@ -9,11 +9,11 @@ export default function HomeScreen({navigation}: { navigation: any }) {
                 navigation.navigate('01Fundamental')
               }
       />
-      {/*<Button title="02 - Layout"*/}
-      {/*        onPress={() =>*/}
-      {/*          navigation.navigate('02Layout')*/}
-      {/*        }*/}
-      {/*/>*/}
+      <Button title="02 - Layout"
+              onPress={() =>
+                navigation.navigate('02Layout')
+              }
+      />
       <Button title="02 - Profile"
               onPress={() =>
                 navigation.navigate('Profile', {name: 'Jane'})

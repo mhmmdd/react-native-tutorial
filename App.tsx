@@ -17,7 +17,7 @@ export default function App() {
           options={{title: 'Welcome'}}
         />
         <Stack.Screen name="01Fundamental" component={FundamentalScreen01}/>
-        {/*<Stack.Screen name="02Layout" component={LayoutScreen02}/>*/}
+        <Stack.Screen name="02Layout" component={LayoutScreen02}/>
         <Stack.Screen name="Profile" component={ProfileScreen}/>
       </Stack.Navigator>
     </NavigationContainer>
