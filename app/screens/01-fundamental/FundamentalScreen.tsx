@@ -13,7 +13,7 @@ import {
 export default function FundamentalScreen01() {
   const handlePress = () => console.log("Text pressed");
 
-  console.log(require('../../assets/icon.png'));
+  console.log(require('../../../assets/icon.png'));
 
   return (
     // SafeAreaView is working only IOS

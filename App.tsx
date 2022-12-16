@@ -1,11 +1,11 @@
 import {NavigationContainer} from "@react-navigation/native";
 import {createNativeStackNavigator} from "@react-navigation/native-stack";
-import HomeScreen from "./screens/HomeScreen";
-import ProfileScreen from "./screens/01-fundamental/profile";
-import FundamentalScreen01 from "./screens/01-fundamental/FundamentalScreen";
-import LayoutScreen02 from "./screens/02-Layout/LayoutScreen";
-import FlexboxScreen03 from "./screens/02-Layout/FlexboxScreen";
-import ListScreen04 from "./screens/03-List/ListScreen";
+import HomeScreen from "./app/screens/HomeScreen";
+import ProfileScreen from "./app/screens/01-fundamental/profile";
+import FundamentalScreen01 from "./app/screens/01-fundamental/FundamentalScreen";
+import LayoutScreen02 from "./app/screens/02-Layout/LayoutScreen";
+import FlexboxScreen03 from "./app/screens/02-Layout/FlexboxScreen";
+import ListScreen04 from "./app/screens/03-List/ListScreen";
 
 const Stack = createNativeStackNavigator();
 

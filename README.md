@@ -13,3 +13,12 @@
 1. FlatList
 2. expo-constants
 3. TouchableHighlight: with custom underlay color
+
+## 04 - Changes
+### 1. Gesture
+1. [GestureHandler](https://docs.expo.dev/versions/latest/sdk/gesture-handler/)
+2. https://docs.swmansion.com/react-native-gesture-handler/
+3. [Swipeable](https://docs.swmansion.com/react-native-gesture-handler/docs/api/components/swipeable)
+```shell
+npx expo install react-native-gesture-handler
+```
