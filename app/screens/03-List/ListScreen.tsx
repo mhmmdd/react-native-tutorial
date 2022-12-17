@@ -25,6 +25,7 @@ export default function ListScreen04() {
   // const count = array[0];
   // const setCount = array[1];
   const [messages, setMessages] = useState(initialMessages);
+  const [refreshing, setRefreshing] = useState(false);
 
   const handleDelete = (message) => {
     // Delete the message from messages
@@ -50,6 +51,16 @@ export default function ListScreen04() {
                 //   <View style={{width: '100%', height: 1, backgroundColor: '#000'}}/>
                 // }
                 ItemSeparatorComponent={ListItemSeparator}
+                refreshing={refreshing}
+                onRefresh={() => {
+                    setMessages([...messages, {
+                      id: messages.length+1,
+                      title: 'T' + (messages.length+1),
+                      description: 'D' + (messages.length+1),
+                      uri: 'https://picsum.photos/70/70'
+                    }]);
+                  }
+                }
 
       />
     </Screen>

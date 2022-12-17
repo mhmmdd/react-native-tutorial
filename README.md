@@ -22,3 +22,4 @@
 ```shell
 npx expo install react-native-gesture-handler
 ```
+### 2. Pull to Refresh
