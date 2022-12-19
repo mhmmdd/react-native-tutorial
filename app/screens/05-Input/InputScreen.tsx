@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import Screen from "../Screen";
 import {StyleSheet, Text, TextInput} from "react-native";
+import AppTextInput from "../../components/AppTextInput";
 
 function InputScreen() {
   const [firstName, setFirstName] = useState('');
@@ -15,6 +16,13 @@ function InputScreen() {
         onChangeText={text => setFirstName(text)}
         placeholder="First Name"
         style={styles.firstName}
+      />
+
+      <Text>Customized Input</Text>
+      <AppTextInput
+        icon="email"
+        placeholder="Username"
+        onChangeText={text => setFirstName(text)}
       />
     </Screen>
   );

@@ -28,3 +28,4 @@ npx expo install react-native-gesture-handler
 
 ## 05 - Changes
 ### 1. Text Input
+### 2. Customized, App Text Input
