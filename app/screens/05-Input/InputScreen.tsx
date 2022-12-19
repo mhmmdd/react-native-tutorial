@@ -1,10 +1,13 @@
 import React, {useState} from 'react';
 import Screen from "../Screen";
-import {StyleSheet, Text, TextInput} from "react-native";
+import {StyleSheet, Switch, Text, TextInput} from "react-native";
 import AppTextInput from "../../components/AppTextInput";
+import {Picker} from "@react-native-picker/picker";
 
 function InputScreen() {
   const [firstName, setFirstName] = useState('');
+  const [isNew, setIsNew] = useState(false);
+  const [selectedLanguage, setSelectedLanguage] = useState();
 
   return (
     <Screen>
@@ -24,6 +27,22 @@ function InputScreen() {
         placeholder="Username"
         onChangeText={text => setFirstName(text)}
       />
+
+
+      <Text>Switch: {isNew.toString()}</Text>
+      <Switch
+        value={isNew}
+        onValueChange={value => setIsNew(value)}/>
+
+      <Text>Picker: {selectedLanguage}</Text>
+      <Picker
+        selectedValue={selectedLanguage}
+        onValueChange={(itemValue) =>
+          setSelectedLanguage(itemValue)
+        }>
+        <Picker.Item label="Java" value="java"/>
+        <Picker.Item label="JavaScript" value="js"/>
+      </Picker>
     </Screen>
   );
 }
