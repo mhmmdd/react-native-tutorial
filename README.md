@@ -25,3 +25,6 @@ npx expo install react-native-gesture-handler
 ### 2. Pull to Refresh
 ### 3. Account screen
 ### 4. Listing screen
+
+## 05 - Changes
+### 1. Text Input

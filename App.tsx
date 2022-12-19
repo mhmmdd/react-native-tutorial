@@ -8,6 +8,7 @@ import FlexboxScreen03 from "./app/screens/02-Layout/FlexboxScreen";
 import ListScreen04 from "./app/screens/03-List/ListScreen";
 import AccountScreen from "./app/screens/04-Account/AccountScreen";
 import ListingsScreen from "./app/components/ListingsScreen";
+import InputScreen from "./app/screens/05-Input/InputScreen";
 
 const Stack = createNativeStackNavigator();
 
@@ -26,6 +27,7 @@ export default function App() {
         <Stack.Screen name="04List" component={ListScreen04}/>
         <Stack.Screen name="05Account" component={AccountScreen}/>
         <Stack.Screen name="06Listing" component={ListingsScreen}/>
+        <Stack.Screen name="07Input" component={InputScreen}/>
         <Stack.Screen name="Profile" component={ProfileScreen}/>
       </Stack.Navigator>
     </NavigationContainer>
