@@ -43,3 +43,4 @@ For web development
 $ npx expo install @expo/webpack-config@^0.17.2
 $ npm run web
 ````
+### 3. Error Component
