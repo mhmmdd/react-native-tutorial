@@ -33,3 +33,13 @@ npx expo install react-native-gesture-handler
 
 ## 06 - Form
 ### 1. Login Form
+### 2. Formik and Yup
+````shell
+$ npm install formik --save
+$ npm install yup --save
+
+For web development
+````shell
+$ npx expo install @expo/webpack-config@^0.17.2
+$ npm run web
+````
