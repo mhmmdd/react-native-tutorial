@@ -44,3 +44,5 @@ $ npx expo install @expo/webpack-config@^0.17.2
 $ npm run web
 ````
 ### 3. Error Component
+### 4. Formik Touched state
+### 5. Field Component with Formik useFormikContext
