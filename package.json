@@ -9,12 +9,12 @@
     "web": "set NODE_OPTIONS=--openssl-legacy-provider && expo start --web"
   },
   "dependencies": {
-    "@expo/webpack-config": "^0.16.19",
+    "@expo/webpack-config": "^0.17.2",
     "@react-native-community/hooks": "^2.8.1",
-    "@react-native-picker/picker": "2.4.8",
+    "@react-native-picker/picker": "^2.4.8",
     "@react-navigation/native": "^6.1.1",
     "@react-navigation/native-stack": "^6.9.6",
-    "expo": "^44.0.6",
+    "expo": "^47.0.9",
     "expo-constants": "~14.0.2",
     "expo-status-bar": "~1.4.2",
     "formik": "^2.2.9",

@@ -47,3 +47,8 @@ $ npm run web
 ### 4. Formik Touched state
 ### 5. Field Component with Formik useFormikContext
 ### 6. Creating Form Component and organizing all form components
+### 7. Listing Edit Screen
+````shell
+$ expo start --tunnel
+$ expo doctor --fix-dependencies
+````
