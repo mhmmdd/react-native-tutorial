@@ -1,5 +1,5 @@
 import React from 'react';
-import Screen from "../Screen";
+import Screen from "../../components/Screen";
 import ListItem from "../../components/Listitem";
 import {FlatList, StyleSheet, View} from "react-native";
 import colors from "../../config/colors";

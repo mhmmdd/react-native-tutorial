@@ -1,5 +1,5 @@
 import React from 'react';
-import Screen from "../screens/Screen";
+import Screen from "./Screen";
 import {FlatList, StyleSheet} from "react-native";
 import Card from "./Card";
 import colors from "../config/colors";

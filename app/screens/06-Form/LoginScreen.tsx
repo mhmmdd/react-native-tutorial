@@ -1,5 +1,5 @@
 import React from 'react';
-import Screen from "../Screen";
+import Screen from "../../components/Screen";
 import {Image, StyleSheet} from "react-native";
 import * as Yup from 'yup';
 import {AppForm, AppFormField, SubmitButton} from "../../components/forms";

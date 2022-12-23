@@ -1,7 +1,7 @@
 import {FlatList} from 'react-native';
 import React, {useState} from "react";
 import ListItem from "../../components/Listitem";
-import Screen from "../Screen";
+import Screen from "../../components/Screen";
 import ListItemSeparator from "../../components/ListitemSeperator";
 import ListItemDeleteAction from "../../components/ListItemDeleteAction";
 

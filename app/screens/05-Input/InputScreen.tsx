@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import Screen from "../Screen";
+import Screen from "../../components/Screen";
 import {StyleSheet, Switch, Text, TextInput} from "react-native";
 import AppTextInput from "../../components/AppTextInput";
 import {Picker} from "@react-native-picker/picker";
