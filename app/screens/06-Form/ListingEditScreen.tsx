@@ -40,11 +40,13 @@ function LoginScreen() {
         <FormField
           keyboardType="numeric"
           maxLength={8}
+          width={120}
           name="price"
           placeholder="Price"/>
 
         <Picker
           items={categories}
+          width="50%"
           name="category"
           placeholder="Category"/>
 
