@@ -1,3 +1,4 @@
+# Basic
 ## 01 - Changes
 1. SafeAreaView: It is working only IOS
 2. Text: numberOfLines, onPress
@@ -51,4 +52,11 @@ $ npm run web
 ````shell
 $ expo start --tunnel
 $ expo doctor --fix-dependencies
+````
+
+# Advanced
+## 07 - Image Picker
+### 1. useEffect to get the permission
+````shell
+$ npx expo install expo-image-picker
 ````

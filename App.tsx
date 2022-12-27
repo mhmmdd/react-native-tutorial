@@ -11,6 +11,7 @@ import ListingsScreen from "./app/components/ListingsScreen";
 import InputScreen from "./app/screens/05-Input/InputScreen";
 import LoginScreen from "./app/screens/06-Form/LoginScreen";
 import ListingEditScreen from "./app/screens/06-Form/ListingEditScreen";
+import ImagePickerScreen from "./app/screens/07-ImagePicker/ImagePickerScreen";
 
 const Stack = createNativeStackNavigator();
 
@@ -32,6 +33,7 @@ export default function App() {
         <Stack.Screen name="07Input" component={InputScreen}/>
         <Stack.Screen name="08Login" component={LoginScreen}/>
         <Stack.Screen name="09ListingEdit" component={ListingEditScreen}/>
+        <Stack.Screen name="10ImagePicker" component={ImagePickerScreen}/>
         <Stack.Screen name="Profile" component={ProfileScreen}/>
       </Stack.Navigator>
     </NavigationContainer>
