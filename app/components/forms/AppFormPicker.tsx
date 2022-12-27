@@ -22,7 +22,7 @@ function AppFormPicker({items, name, placeholder, width = "100%"}) {
           })}
         </Picker>
       </View>
-      <ErrorMessage error={errors[name]} visible={touched.email}/>
+      <ErrorMessage error={errors[name]} visible={touched[name]}/>
     </>
   );
 }

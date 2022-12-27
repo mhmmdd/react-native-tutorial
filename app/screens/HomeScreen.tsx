@@ -54,6 +54,11 @@ export default function HomeScreen({navigation}: { navigation: any }) {
                 navigation.navigate('10ImagePicker')
               }
       />
+      <Button title="11 - Listing Edit"
+              onPress={() =>
+                navigation.navigate('11ListingEdit')
+              }
+      />
       <Button title="02 - Profile"
               onPress={() =>
                 navigation.navigate('Profile', {name: 'Jane'})
