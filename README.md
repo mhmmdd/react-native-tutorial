@@ -60,3 +60,4 @@ $ expo doctor --fix-dependencies
 ````shell
 $ npx expo install expo-image-picker
 ````
+### 2. Image Input, Image Input List, ScrollView
