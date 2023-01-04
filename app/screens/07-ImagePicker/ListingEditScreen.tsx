@@ -1,25 +1,44 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import Screen from "../../components/Screen";
 import {StyleSheet} from "react-native";
 import * as Yup from 'yup';
 import {AppForm, AppFormField as FormField, AppFormPicker as Picker, SubmitButton} from "../../components/forms";
 import FormImagePicker from "../../components/forms/FormImagePicker";
+import * as Location from 'expo-location';
 
 const validationSchema = Yup.object().shape({
   title: Yup.string().required().min(1).label("Title"),
   price: Yup.number().required().min(1).max(10000).label("Price"),
   description: Yup.string().label("Description"),
-  category: Yup.object().required().nullable().label("Category"),
+  category: Yup.number().required("Please select your category").label("Category"),
   images: Yup.array().min(1, "Please select at least one image.")
 });
 
 const categories = [
-  {label: "Furniture", value: 3},
-  {label: "Clothing", value: 2},
-  {label: "Camera", value: 3},
+  { id: 1, label: "Male", value: 1 },
+  { id: 2, label: "Female", value: 2 },
+  { id: 3, label: "Other", value: 3 },
 ];
 
 function ListingEditScreen() {
+  const [location, setLocation] = useState();
+
+  useEffect(() => {
+    getForegroundLocation ();
+  }, []);
+
+  const getForegroundLocation = async () => {
+    try {
+      const {granted} = await Location.requestForegroundPermissionsAsync();
+      if (!granted) return;
+      const {
+        coords: {latitude, longitude},
+      } = await Location.getLastKnownPositionAsync();
+      setLocation({latitude, longitude});
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   return (
     <Screen style={styles.container}>
@@ -28,10 +47,10 @@ function ListingEditScreen() {
           title: "",
           price: "",
           description: "",
-          category: null,
+          category: "",
           images: []
         }}
-        onSubmit={values => console.log(values)}
+        onSubmit={values => console.log(location)}
         validationSchema={validationSchema}>
 
         <FormImagePicker name="images"/>

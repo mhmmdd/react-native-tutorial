@@ -63,3 +63,8 @@ $ npx expo install expo-image-picker
 ### 2. Image Input, Image Input List, ScrollView
 ### 3. ScrollToEnd with useRef in ScrollView
 ### 4. Listing Edit Screen with Form Picker
+### 4. Listing Edit Screen with Location
+````shell
+$ npx expo install expo-location
+````
+### 5. Fixed the category picker validation 
