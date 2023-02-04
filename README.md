@@ -38,6 +38,7 @@ npx expo install react-native-gesture-handler
 ````shell
 $ npm install formik --save
 $ npm install yup --save
+````
 
 For web development
 ````shell
@@ -65,6 +66,12 @@ $ npx expo install expo-image-picker
 ### 4. Listing Edit Screen with Form Picker
 ### 4. Listing Edit Screen with Location
 ````shell
-$ npx expo install expo-location
+npx expo install expo-location
 ````
 ### 5. Fixed the category picker validation 
+### 6. Custom Location Hooks
+Install Prettier
+```shell
+npm install --save-dev --save-exact prettier
+npm install --global prettier
+```
