@@ -75,3 +75,15 @@ Install Prettier
 npm install --save-dev --save-exact prettier
 npm install --global prettier
 ```
+## 08 - Navigation
+### 1. Stack Navigator
+```shell
+npm install --save @react-navigation/native
+npm install --save @react-navigation/native-stack
+npx expo install react-native-screens react-native-safe-area-context
+```
+
+## 09 - Image Save
+```shell
+npm install @react-native-camera-roll/camera-roll react-native-permissions
+```
